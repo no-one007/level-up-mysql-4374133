@@ -13,3 +13,5 @@ SELECT DISTINCT ProdNumber, ProdName, Price, ProductActive FROM transactions;
 
 INSERT INTO orders 
 SELECT DISTINCT OrderNum, OrderDate, EmpID, CustomerID, ProdNumber, OrderType, Quantity, Discount FROM transactions;
+
+#update the transactions by removing $,% symbols and now add the data from transactions to the respective created tables.

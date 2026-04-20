@@ -1,4 +1,11 @@
-SELECT * FROM transactions
-WHERE OrderNum NOT LIKE '110%' AND OrderNum NOT LIKE '111%'
-OR OrderNum LIKE '%-%'
-ORDER BY OrderNum DESC;
+INSERT INTO customer
+SELECT DISTINCT CustomerID, CustName, CustState, CustomerType FROM transactions;
+
+INSERT INTO employee
+SELECT DISTINCT EmpID, EmployeeName, SalesRegion, EmployeeJobTitle FROM transactions;
+
+INSERT INTO product
+SELECT DISTINCT ProdNumber, ProdName, Price, ProductActive FROM transactions;
+
+INSERT INTO orders
+SELECT DISTINCT OrderNum, OrderDate, EmpID, CustomerID, ProdNumber, OrderType, Quantity, Discount  FROM transactions;

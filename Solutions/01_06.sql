@@ -29,3 +29,5 @@ CREATE TABLE orders (
   Quantity INT NOT NULL,
   Discount DECIMAL(2,2) NOT NULL,
   PRIMARY KEY (OrderNum));
+
+#Normalize the database by breaking down the table into smaller tables and split all the data, avoid redundancy.

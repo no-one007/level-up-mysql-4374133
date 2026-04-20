@@ -11,4 +11,6 @@ UPDATE transactions SET OrderNum = replace(OrderNum, ']', '');
 UPDATE transactions SET OrderNum = replace(OrderNum, '00', '')
 WHERE LENGTH(OrderNum) > 7;
 
+#update the OrderNum correctly
+
 
