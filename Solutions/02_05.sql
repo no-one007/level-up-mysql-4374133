@@ -15,3 +15,6 @@ WHERE MONTHNAME(orders.OrderDate) = 'December'
 GROUP BY CustState
 ORDER BY PercentageOfTotalOrders DESC
 LIMIT 5;
+
+#Analyze sales by region that sell best during holidays for efficient marketing
+#count(*) counts the number of rows

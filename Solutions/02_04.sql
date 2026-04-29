@@ -11,3 +11,5 @@ JOIN orders USING (ProdNumber)
 JOIN customer USING (CustomerID)) AS sales
 GROUP BY CustomerName
 ORDER BY SumOrderTotal DESC;
+
+#find the best customers for providing incentives

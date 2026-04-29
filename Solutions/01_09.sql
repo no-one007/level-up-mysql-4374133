@@ -6,3 +6,5 @@ JOIN product ON product.ProdNumber = orders.ProdNumber
 JOIN customer USING (CustomerID)
 JOIN employee USING (EmpID)
 ORDER BY orders.OrderDate DESC;
+
+#create a sales_transactions view

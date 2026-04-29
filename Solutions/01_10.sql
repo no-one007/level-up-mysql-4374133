@@ -7,3 +7,5 @@ JOIN product ON product.ProdNumber = orders.ProdNumber
 JOIN customer USING (CustomerID)
 JOIN employee USING (EmpID)
 ORDER BY orders.OrderDate DESC;
+
+#Add the total price of the order placed

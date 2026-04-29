@@ -20,3 +20,5 @@ ORDER BY Quantity DESC) AS CY
 USING (ProdName)
 WHERE LY.Quantity > CY.Quantity
 ORDER BY LastYearQuantity DESC;
+
+#Find products that are not selling from previous year

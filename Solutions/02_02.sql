@@ -13,3 +13,5 @@ JOIN orders USING (EmpID)
 GROUP BY Employee
 ORDER BY NumOrders ASC
 LIMIT 3);
+
+#list containg top3 and bottom3 employees

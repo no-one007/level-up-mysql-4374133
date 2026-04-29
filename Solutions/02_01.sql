@@ -4,3 +4,5 @@ FROM orders
 JOIN product USING (ProdNumber)
 GROUP BY product.ProdName
 ORDER BY TotalSold ASC;
+
+#quantity of each product sold
